@@ -1,0 +1,5 @@
+{{#list-filter filter=(action 'filterByAssigned') as |results|}}
+  {{#each results as |ticket|}}
+    {{ticket-component ticket=ticket}}
+  {{/each}}
+{{/list-filter}}

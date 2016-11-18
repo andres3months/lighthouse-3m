@@ -1,7 +1,9 @@
-# Lighthouse-3m
+# Lighthouse-3m (AKA F*CK Lighthouse)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Lighthouse is ugly, old, difficult to use and nobody likes it. Buuuuuut... it has an API (YAY!).
+So, out of boredom and willing to learn some front-end, I decided to learn some [EmberJS](http://emberjs.com/) and try to improve our support experience at the same time.
+
+Feel free to yell at me and change whatever you like. This is just an experiment and probably nobody will look at it after a month or so.
 
 ## Prerequisites
 
@@ -31,6 +33,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Running Tests
 
+# TODO: Tests are broken now because I don't know how to do TDD. I'll fix them whenever I can.
+
 * `ember test`
 * `ember test --server`
 
@@ -41,7 +45,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+The deployment will most likely be on our beloved trust machine. 
 
 ## Further Reading / Useful Links
 
@@ -50,4 +54,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

@@ -1,0 +1,30 @@
+  <div class="col s12 m6">
+    <div class="card small hoverable">
+      <div class="waves-effect waves-block waves-light blue-grey lighten-3">
+        <p class='activator valign center-align black-text'>
+          Last updated by <b>{{ticket.user_name}}</b> {{datetimeDifference ticket.updated_at Ember.Date }} <br/>
+          {{formatDatetime ticket.updated_at}}
+        </p>
+      </div>
+      <div class='card-content'>
+        <p class='center-align'><b>{{ticket.title}}</b></p>
+        <hr/>
+        <p><i><b>Assigned to : </b></i> {{ticket.assigned_user_name}}</p>
+        <p><i><b>Importance : </b></i> {{ticket.importance_name}}</p>
+        <p><i><b>State : </b></i> {{ticket.formatted_state}}</p>
+      </div>
+      <div class='card-action'>
+        <a href="{{ticket.url}}" class="pink-text text-accent-3" target='_blank'>View in lighthouse</a>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title activator grey-text text-darken-4"><i class="pink-text text-accent-3 material-icons right">close</i></span>
+        <br/>
+        <p>
+          <b>{{ticket.creator_name}}</b> said {{datetimeDifference ticket.created_at Ember.Date}}<br/>
+          <small>{{formatDatetime ticket.created_at}}</small>
+          <br/>
+        </p>
+        <p>{{ticket.latest_body}}</p>
+      </div>
+    </div>
+  </div>
