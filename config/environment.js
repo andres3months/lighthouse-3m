@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'lighthouse-3m',
     environment: environment,
-    rootURL: '/',
+    rootURL: '/f-lighthouse/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
