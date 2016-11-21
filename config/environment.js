@@ -4,8 +4,9 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'lighthouse-3m',
     environment: environment,
-    rootURL: '/f-lighthouse/',
-    locationType: 'hash',
+    rootURL: '/',
+    locationType: 'auto',
+    ApiBaseURL: 'http://localhost:9393',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -44,16 +45,6 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
 
-  }
-
-  // http://stackoverflow.com/a/30512076
-  try {
-    var local = require('./env_variables');
-    Object.keys(local.config).forEach(function(key) {
-      ENV[key] = local.config[key];
-    });
-  } catch(err) {
-    console.log("config/env_variables.js not found");
   }
 
   return ENV;
